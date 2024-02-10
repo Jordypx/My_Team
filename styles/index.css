@@ -1,14 +1,15 @@
 :root {
     /* Colors */
-    --primary-color-1: hsl(337, 48%, 49%);
-    --primary-color-2: #FBFCFE;
+    --primary-color-1: #014E56;
+    --primary-color-2: #F67E7E;
+    --primary-color-3: #FFF;
 
-    --secondary-color-1: #36536b;
-    --secondary-color-2: #6C8294;
-    --secondary-color-3: hsl(207, 27%, 15%);
-    --secondary-color-4: hsl(337, 60%, 64%);
+    --secondary-color-1: #79C8C7;
+    --secondary-color-2: #2C6269;
+    --secondary-color-3: #004047;
+    --secondary-color-4: #012F34;
+    --secondary-color-4: #002529;
 
-    --background-color: #edf3f8;
 
     /* Breakpoints */
     --desktop: 1440px;
@@ -17,77 +18,51 @@
     --mobile: 375px;
 
     /* Fonts size */
-    --heading-900: 2rem;
-    --heading-800: 2rem;
-    --heading-700: 1.125rem;
-    --heading-600: 1.5rem;
-    --body-500: 0.938rem;
+    --heading-900: 6.25rem;
+    --heading-800: 4rem;
+    --heading-700: 3rem;
+    --heading-600: 1.125rem;
+
+    --body-500: 1.125rem;
+    --body-400: 0.938rem;
+
+    --line-height-900: 6.25rem;
+    --line-height-800: 3.5rem;
+    --line-height-700: 3rem;
+    --line-height-600: 1.75rem;
+    --line-height-500: 1.75rem;
+    --line-height-400: 1.563rem;
 
     /* Padding */
     --sidePadding: 1.5rem;
     --topAndBotPadding: 4rem;
 }
 
-/* Titles */
-h1,
-h2 {
-    font-family: DMserifDisplayRegular;
-    font-weight: normal;
-    color: var(--secondary-color-1);
-}
-
-h3 {
-    font-size: 1.125rem;
-    font-family: PublicSansRegular;
-}
-
-
 @media screen and (min-width: 768px) {
-    :root {
-
-        --heading-900: 3rem;
-        --heading-800: 3rem;
-
-        /* Padding */
-        --sidePadding: 2.5rem;
-
-    }
+    :root {}
 }
 
 @media screen and (min-width: 1024px) {
-    :root {
-        /* Padding */
-        --topAndBotPadding: 2rem;
-        --sidePadding: 4rem;
-    }
+    :root {}
 }
 
 @media screen and (min-width: 1440px) {
 
 
-    :root {
-        /* Fonts size */
-        --heading-900: 4.5rem;
-        --heading-800: 3.5rem;
-
-        --heading-700: 2rem;
-
-
-        /* Padding */
-        --sidePadding: 10rem;
-        --topAndBotPadding: 4rem;
-    }
+    :root {}
 }
+
+
 
 /* Font-family */
 @font-face {
-    font-family: DMSerifDisplayRegular;
-    src: url('../public/fonts/static/DM_Serif_Display/DMSerifDisplay-Regular.ttf');
+    font-family: LivvicBold;
+    src: url('../public/fonts/static/Livvic/Livvic-Bold.ttf');
 }
 
 @font-face {
-    font-family: PublicSansRegular;
-    src: url('../public/fonts/static/Public_Sans/PublicSans-Regular.ttf');
+    font-family: LivvicSemiBold;
+    src: url('../public/fonts/static/Livvic/Livvic-SemiBold.ttf');
 }
 
 
@@ -107,13 +82,13 @@ html {
     /* Bug : rentre en conflit avec le form validation (le message d'erreur ne s'affiche pas)  */
     /* scroll-behavior: smooth; */
     font-size: 100%;
-
 }
 
 body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     font-size: var(--body-500);
+    line-height: var(--line-height-500);
     line-height: 1.75rem;
     position: relative;
     z-index: 15;
