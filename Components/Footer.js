@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { SiFacebook, SiLinkedin, SiTwitter } from 'react-icons/si';
 import classes from './Footer.module.css';
-import logo from '@/public/images/shared/desktop/logo_white.svg';
+import logo from '@/public/images/logo.svg';
 import Image from 'next/image';
 import GlobalContext from '@/Store/GlobalContext';
 import Link from 'next/link';
@@ -15,9 +15,8 @@ const Footer = () => {
                     <Link href="/">
                         <Image src={logo} alt='logo payAPI' className={classes.logoImg} />
                     </Link>
-                    <Link href="/pricing" className={classes.link}>Pricing</Link>
+                    <Link href="/pricing" className={classes.link}>home</Link>
                     <Link href="/about" className={classes.link}>About</Link>
-                    <Link href="/contact" className={classes.link}>Contact</Link>
                 </div>
                 <div className={classes.socialLinks}>
                     <a href="" className={classes.icon} target='_blank'>

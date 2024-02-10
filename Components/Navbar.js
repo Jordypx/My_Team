@@ -1,5 +1,5 @@
 import React, { useContext, useRef } from 'react';
-import logo from '@/public/images/shared/desktop/logo.svg';
+import logo from '@/public/images/logo.svg';
 import Image from 'next/image';
 import classes from './Navbar.module.css'
 import GlobalContext from '@/Store/GlobalContext';
@@ -18,24 +18,23 @@ const Navbar = () => {
                     <div className='d-flex gap-4 align-items-center'>
                         <div className={classes.logo}>
                             <Link href="/">
-                                <Image src={logo} alt='logo payAPI' className={classes.logoImg} />
+                                <Image src={logo} alt='logo myTeam' className={classes.logoImg} />
                             </Link>
                         </div>
                         {/* Classic links */}
                         <div className={`${isMobileResolution ? "display-none" : classes.navLink}`}>
 
-                            <Link href="/pricing" className={classes.link}>Pricing</Link>
-                            <Link href="/about" className={classes.link}>About</Link>
-                            <Link href="/contact" className={classes.link}>Contact</Link>
+                            <Link href="/pricing" className={classes.link}>home</Link>
+                            <Link href="/about" className={classes.link}>about</Link>
+                            <Link href="/contact" className='primary-button-light'>contact us</Link>
                         </div>
                     </div>
                     <div className={`${isMobileResolution ? "display-none" : ""}`}>
-
-                        <button className='primary-button'>Schedule a demo</button>
+                        <button className='primary-button'>contact us</button>
                     </div>
 
 
-                    {/* Burger menu */}
+                    {/* Icon burger menu */}
                     <div ref={burger} className={`${isMobileResolution ? classes.hamburger : classes.hamburger + " display-none"}`}
                         onClick={() => {
                             toggleMenu();
@@ -48,23 +47,25 @@ const Navbar = () => {
                     {/* Mobile menu */}
                     <div className={`${classes.mobileNav} ${isMenuOpen ? classes.active : ""}`}>
                         <div className={classes.mobileNavWrapper}>
-                            <Link href="/pricing" className={classes.mobileLink} onClick={() => {
-                                toggleMenu();
-                                burger.current.classList.toggle(classes.isActive);
-                            }}>Pricing</Link>
+                            <div className={classes.mobileLinks}>
+                                <Link href="/pricing" className={classes.mobileLink} onClick={() => {
+                                    toggleMenu();
+                                    burger.current.classList.toggle(classes.isActive);
+                                }}>home</Link>
 
-                            <Link href="/about" className={classes.mobileLink} onClick={() => {
-                                toggleMenu();
-                                burger.current.classList.toggle(classes.isActive);
-                            }}>About</Link>
+                                <Link href="/about" className={classes.mobileLink} onClick={() => {
+                                    toggleMenu();
+                                    burger.current.classList.toggle(classes.isActive);
+                                }}>about</Link>
 
-                            <Link href="/contact" className={classes.mobileLink} onClick={() => {
-                                toggleMenu();
-                                burger.current.classList.toggle(classes.isActive);
-                            }}>Contact</Link>
-                            <button className='primary-button'>Schedule a demo</button>
+                                <Link href="/contact" className='primary-button-light' onClick={() => {
+                                    toggleMenu();
+                                    burger.current.classList.toggle(classes.isActive);
+                                }}>contact us</Link>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </nav>
         </header>

@@ -12,7 +12,7 @@ import Footer from '@/Components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({ reviews, mapBase64 }) {
+export default function Home() {
   /* Logger */
   const logger = getLogger('Meeting');
   logger.debug('Home page rendered');
@@ -62,21 +62,20 @@ export default function Home({ reviews, mapBase64 }) {
   return (
     <>
       <Head>
-        <title>PayAPI</title>
-        <meta name="description" content="Start building with our APIs for absolutely free" />
+        <title>MyTeam</title>
+        <meta name="description" content="Finding the best talent" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={`overlay-burger-menu ${isMenuOpen ? 'isActive' : ''}`} />
-      <div className='d-flex f-col h-80'>
-        <div className='bg-circle-home'> </div>
+      <div className='d-flex f-col'>
         <Navbar />
         <main className='d-flex flex-grow-2'>
           <Hero />
         </main>
       </div>
-      <Client />
-      <Values />
+      {/* <Client />
+      <Values /> */}
       <Footer />
 
     </>
