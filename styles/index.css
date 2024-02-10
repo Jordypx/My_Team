@@ -19,7 +19,7 @@
 
     /* Fonts size */
     --heading-900: 6.25rem;
-    --heading-800: 4rem;
+    --heading-800: 2.5rem;
     --heading-700: 3rem;
     --heading-600: 1.125rem;
 
@@ -27,7 +27,7 @@
     --body-400: 0.938rem;
 
     --line-height-900: 6.25rem;
-    --line-height-800: 3.5rem;
+    --line-height-800: 2.5rem;
     --line-height-700: 3rem;
     --line-height-600: 1.75rem;
     --line-height-500: 1.75rem;
@@ -39,17 +39,75 @@
 }
 
 @media screen and (min-width: 768px) {
-    :root {}
+    :root {
+        /* Fonts size */
+        --heading-900: 6.25rem;
+        --heading-800: 4rem;
+        --heading-700: 3rem;
+        --heading-600: 1.125rem;
+
+        --body-500: 1.125rem;
+        --body-400: 0.938rem;
+
+        --line-height-900: 6.25rem;
+        --line-height-800: 3.5rem;
+        --line-height-700: 3rem;
+        --line-height-600: 1.75rem;
+        --line-height-500: 1.75rem;
+        --line-height-400: 1.563rem;
+
+        /* Padding */
+        --sidePadding: 1.5rem;
+        --topAndBotPadding: 4rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    :root {}
+    :root {
+        /* Fonts size */
+        --heading-900: 6.25rem;
+        --heading-800: 4rem;
+        --heading-700: 3rem;
+        --heading-600: 1.125rem;
+
+        --body-500: 1.125rem;
+        --body-400: 0.938rem;
+
+        --line-height-900: 6.25rem;
+        --line-height-800: 3.5rem;
+        --line-height-700: 3rem;
+        --line-height-600: 1.75rem;
+        --line-height-500: 1.75rem;
+        --line-height-400: 1.563rem;
+
+        /* Padding */
+        --sidePadding: 1.5rem;
+        --topAndBotPadding: 4rem;
+    }
 }
 
 @media screen and (min-width: 1440px) {
+    :root {
+        /* Fonts size */
+        --heading-900: 6.25rem;
+        --heading-800: 4rem;
+        --heading-700: 3rem;
+        --heading-600: 1.125rem;
 
+        --body-500: 1.125rem;
+        --body-400: 0.938rem;
 
-    :root {}
+        --line-height-900: 6.25rem;
+        --line-height-800: 3.5rem;
+        --line-height-700: 3rem;
+        --line-height-600: 1.75rem;
+        --line-height-500: 1.75rem;
+        --line-height-400: 1.563rem;
+
+        /* Padding */
+        --sidePadding: 1.5rem;
+        --topAndBotPadding: 4rem;
+    }
 }
 
 
@@ -94,6 +152,11 @@ body {
     z-index: 15;
     background-color: var(--primary-color-1);
 
+}
+
+/* Titles */
+h1 {
+    font-family: 'LivvicBold';
 }
 
 
@@ -295,7 +358,7 @@ a {
     height: 100%;
     right: -100%;
     position: fixed;
-    background-color: rgb(35, 31, 31, .3);
+    background-color: rgb(35, 31, 31, .6);
     z-index: 30;
     overflow-y: hidden;
     transition: .4s ease-in-out;
@@ -308,9 +371,25 @@ a {
 
 
 main {
-    /* min-height: 100svh; */
-    padding: 0 var(--sidePadding);
-    background-color: var(--background-color);
+    padding: 2rem var(--sidePadding);
+}
+
+.home {
+    padding-bottom: 10rem;
+    position: relative;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -1.5rem;
+    width: 24.063rem;
+    height: 6rem;
+    background-image: url('../public/images/bg-pattern-home-2.svg');
+    background-repeat: no-repeat;
+    z-index: -1;
+
 }
 
 .pricing {

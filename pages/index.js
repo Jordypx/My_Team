@@ -68,12 +68,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={`overlay-burger-menu ${isMenuOpen ? 'isActive' : ''}`} />
-      <div className='d-flex f-col'>
-        <Navbar />
-        <main className='d-flex flex-grow-2'>
-          <Hero />
-        </main>
-      </div>
+      <Navbar />
+      <main className='home'>
+        <Hero />
+      </main>
+
       {/* <Client />
       <Values /> */}
       <Footer />
