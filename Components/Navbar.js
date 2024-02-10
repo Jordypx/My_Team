@@ -15,7 +15,7 @@ const Navbar = () => {
         <header className={`${classes.header}`}>
             <nav className={`${classes.navbar} max-width`}>
                 <div className={classes.navWrapper}>
-                    <div className='d-flex gap-4 align-items-center'>
+                    <div className='d-flex gap-3 align-items-center'>
                         <div className={classes.logo}>
                             <Link href="/">
                                 <Image src={logo} alt='logo myTeam' className={classes.logoImg} />
@@ -26,11 +26,11 @@ const Navbar = () => {
 
                             <Link href="/pricing" className={classes.link}>home</Link>
                             <Link href="/about" className={classes.link}>about</Link>
-                            <Link href="/contact" className='primary-button-light'>contact us</Link>
                         </div>
                     </div>
                     <div className={`${isMobileResolution ? "display-none" : ""}`}>
-                        <button className='primary-button'>contact us</button>
+                        <Link href="/contact" className='primary-button-light'>contact us</Link>
+
                     </div>
 
 
