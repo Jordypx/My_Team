@@ -1,0 +1,165 @@
+.valueSection {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    min-height: 100svh;
+    padding: var(--topAndBotPadding) var(--sidePadding);
+    background-color: var(--background-color);
+}
+
+.advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.advantage.simpleUX {
+    flex-direction: column-reverse;
+}
+
+.values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+}
+
+.easyToImplementImg {
+    box-shadow: 12px 12px 38px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.value h3 {
+    font-size: 1.125rem;
+    color: var(--secondary-color-1);
+}
+
+.valueSection h2 {
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    color: var(--secondary-color-1);
+}
+
+.valueSection img {
+    height: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+
+.content p,
+.value p {
+    color: var(--secondary-color-2);
+}
+
+@media screen and (min-width: 768px) {
+
+    .valueSection {
+        gap: 6rem;
+    }
+
+    .valueSection h2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+
+    .content p {
+        max-width: 70%;
+    }
+
+    .values {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+        gap: 1rem;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1440px) {
+
+    .simpleUXImg {
+        position: relative;
+        z-index: 10;
+    }
+
+    .bgCircle {
+        position: relative;
+    }
+
+    .bgCircle::before {
+        content: '';
+        position: absolute;
+        top: -9rem;
+        right: -34.5625rem;
+        width: 48.75rem;
+        height: 48.75rem;
+        z-index: 1;
+        background-image: url(/_next/static/media/bg-pattern-circle.96abc064.svg);
+        background-repeat: no-repeat;
+        background-position: 0rem
+    }
+
+    .advantages {
+        margin-inline: auto;
+        max-width: 72rem;
+    }
+
+    .advantage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    .content p,
+    .content h2 {
+        text-align: left;
+    }
+
+    .content {
+        align-items: unset;
+    }
+
+    .value p {
+        max-width: 70%;
+    }
+
+    .valueSection {
+        gap: 10rem;
+    }
+
+    .values {
+
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1800px) {}
