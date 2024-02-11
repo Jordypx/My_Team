@@ -18,7 +18,7 @@
     --mobile: 375px;
 
     /* Fonts size */
-    --heading-900: 6.25rem;
+    --heading-900: 2.5rem;
     --heading-800: 2.5rem;
     --heading-700: 3rem;
     --heading-600: 1.125rem;
@@ -26,7 +26,7 @@
     --body-500: 1.125rem;
     --body-400: 0.938rem;
 
-    --line-height-900: 6.25rem;
+    --line-height-900: 2.5rem;
     --line-height-800: 2.5rem;
     --line-height-700: 3rem;
     --line-height-600: 1.75rem;
@@ -41,15 +41,15 @@
 @media screen and (min-width: 768px) {
     :root {
         /* Fonts size */
-        --heading-900: 6.25rem;
-        --heading-800: 3.5rem;
+        --heading-900: 4rem;
+        --heading-800: 4rem;
         --heading-700: 3rem;
         --heading-600: 1.125rem;
 
         --body-500: 1.125rem;
         --body-400: 0.938rem;
 
-        --line-height-900: 6.25rem;
+        --line-height-900: 3.5rem;
         --line-height-800: 3.5rem;
         --line-height-700: 3rem;
         --line-height-600: 1.75rem;
@@ -62,29 +62,6 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
-    :root {
-        /* Fonts size */
-        --heading-900: 6.25rem;
-        --heading-800: 4rem;
-        --heading-700: 3rem;
-        --heading-600: 1.125rem;
-
-        --body-500: 1.125rem;
-        --body-400: 0.938rem;
-
-        --line-height-900: 6.25rem;
-        --line-height-800: 3.5rem;
-        --line-height-700: 3rem;
-        --line-height-600: 1.75rem;
-        --line-height-500: 1.75rem;
-        --line-height-400: 1.563rem;
-
-        /* Padding */
-        --sidePadding: 1.5rem;
-        --topAndBotPadding: 4rem;
-    }
-}
 
 @media screen and (min-width: 1440px) {
     :root {
@@ -95,7 +72,7 @@
         --heading-600: 1.125rem;
 
         --body-500: 1.125rem;
-        --body-400: 0.938rem;
+        --body-400: 1.125rem;
 
         --line-height-900: 6.25rem;
         --line-height-800: 3.5rem;
@@ -105,7 +82,7 @@
         --line-height-400: 1.563rem;
 
         /* Padding */
-        --sidePadding: 1.5rem;
+        --sidePadding: 10rem;
         --topAndBotPadding: 4rem;
     }
 }
@@ -371,7 +348,8 @@ a {
 
 
 main {
-    padding: 2rem var(--sidePadding);
+    padding: 2rem 0;
+    margin: 0 var(--sidePadding);
 }
 
 .home {
@@ -383,11 +361,12 @@ main {
     content: '';
     position: absolute;
     bottom: 0;
-    right: -1.5rem;
-    width: 24.063rem;
+    width: 100vw;
     height: 6rem;
+    left: -1rem;
     background-image: url('../public/images/bg-pattern-home-2.svg');
     background-repeat: no-repeat;
+    background-position: center 0rem;
     z-index: -1;
 
 }
@@ -484,7 +463,7 @@ main {
 }
 
 .max-width {
-    max-width: 90rem;
+    max-width: 70rem;
     margin-inline: auto;
 }
 
@@ -498,6 +477,10 @@ main {
 
 .h-80 {
     min-height: 80svh;
+}
+
+.min-height-fit-content {
+    min-height: fit-content;
 }
 
 
@@ -532,9 +515,7 @@ main {
     }
 
     .home::after {
-        right: unset;
-        width: 100vw;
-        background-position: center 0rem;
+        left: -2rem;
     }
 }
 
@@ -547,10 +528,25 @@ main {
         min-height: 80vh;
     }
 
-    main {
-        padding: 0 var(--sidePadding);
+}
+
+@media screen and (min-width: 1440px) {
+    .home::after {
+        content: unset;
+    }
+
+    .containerNavAndHero {
+        position: relative;
+    }
+
+    .containerNavAndHero::before {
+        content: '';
+        position: absolute;
+        width: 12.5rem;
+        height: 12.5rem;
+        background-image: url(/_next/static/media/bg-pattern-home-1.502807f1.svg);
+        left: -7rem;
+        top: 18rem;
     }
 
 }
-
-@media screen and (min-width: 1440px) {}
