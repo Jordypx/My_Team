@@ -8,7 +8,7 @@
     --secondary-color-2: #2C6269;
     --secondary-color-3: #004047;
     --secondary-color-4: #012F34;
-    --secondary-color-4: #002529;
+    --secondary-color-5: #002529;
 
 
     /* Breakpoints */
@@ -19,7 +19,7 @@
 
     /* Fonts size */
     --heading-900: 2.5rem;
-    --heading-800: 2.5rem;
+    --heading-800: 2rem;
     --heading-700: 3rem;
     --heading-600: 1.125rem;
 
@@ -27,7 +27,7 @@
     --body-400: 0.938rem;
 
     --line-height-900: 2.5rem;
-    --line-height-800: 2.5rem;
+    --line-height-800: 2rem;
     --line-height-700: 3rem;
     --line-height-600: 1.75rem;
     --line-height-500: 1.75rem;
@@ -42,7 +42,6 @@
     :root {
         /* Fonts size */
         --heading-900: 4rem;
-        --heading-800: 4rem;
         --heading-700: 3rem;
         --heading-600: 1.125rem;
 
@@ -50,7 +49,6 @@
         --body-400: 0.938rem;
 
         --line-height-900: 3.5rem;
-        --line-height-800: 3.5rem;
         --line-height-700: 3rem;
         --line-height-600: 1.75rem;
         --line-height-500: 1.75rem;
@@ -67,7 +65,7 @@
     :root {
         /* Fonts size */
         --heading-900: 6.25rem;
-        --heading-800: 4rem;
+        --heading-800: 3rem;
         --heading-700: 3rem;
         --heading-600: 1.125rem;
 
@@ -75,7 +73,7 @@
         --body-400: 1.125rem;
 
         --line-height-900: 6.25rem;
-        --line-height-800: 3.5rem;
+        --line-height-800: 3rem;
         --line-height-700: 3rem;
         --line-height-600: 1.75rem;
         --line-height-500: 1.75rem;
@@ -463,7 +461,7 @@ main {
 }
 
 .max-width {
-    max-width: 70rem;
+    max-width: 69.375rem;
     margin-inline: auto;
 }
 

@@ -74,6 +74,7 @@ export default function Home() {
           <Hero />
         </main>
       </div >
+      <Values />
       {/* <Client />
       <Values /> */}
       < Footer />
