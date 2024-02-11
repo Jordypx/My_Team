@@ -55,7 +55,7 @@
         --line-height-400: 1.563rem;
 
         /* Padding */
-        --sidePadding: 2rem;
+        --sidePadding: 5rem;
         --topAndBotPadding: 4rem;
     }
 }
@@ -518,7 +518,7 @@ main {
     }
 
     .home::after {
-        left: -2rem;
+        left: -4rem;
     }
 }
 
