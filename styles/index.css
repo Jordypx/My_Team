@@ -98,6 +98,11 @@
     src: url('../public/fonts/static/Livvic/Livvic-SemiBold.ttf');
 }
 
+@font-face {
+    font-family: LivvicMediumItalic;
+    src: url('../public/fonts/static/Livvic/Livvic-MediumItalic.ttf');
+}
+
 
 * {
     margin: 0;

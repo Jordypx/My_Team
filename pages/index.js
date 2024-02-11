@@ -9,6 +9,7 @@ import Navbar from '@/Components/Navbar'
 import Values from '@/Components/Values'
 import Client from '@/Components/Client'
 import Footer from '@/Components/Footer'
+import Feedback from '@/Components/Feedback'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -75,6 +76,7 @@ export default function Home() {
         </main>
       </div >
       <Values />
+      <Feedback />
       {/* <Client />
       <Values /> */}
       < Footer />
