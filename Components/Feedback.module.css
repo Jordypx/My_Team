@@ -83,7 +83,7 @@
 }
 
 .feedbackMessage p {
-    font-size: var(--body-400);
+    font-size: 0.938rem;
     line-height: 1.563rem;
 
 }
@@ -104,5 +104,22 @@
     .wrapper {
         padding-top: 6.25rem;
         padding-bottom: 8rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .wrapper {
+        padding-top: 9.125rem;
+    }
+
+    .feedbacks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .avatar {
+        margin-top: 1.25rem;
     }
 }
