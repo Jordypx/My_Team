@@ -176,7 +176,8 @@ button:disabled {
 }
 
 .primary-button-dark {
-    background-color: var(--primary-color-3);
+    background-color: transparent;
+    border-color: var(--primary-color-3);
     color: var(--primary-color-1);
 
 }
@@ -204,7 +205,16 @@ a.primary-button-light {
     border: 2px solid var(--primary-color-3);
     background-color: transparent;
     border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+}
 
+a.primary-button-dark {
+    padding: .5rem 2rem;
+    color: var(--secondary-color-4);
+    border: 2px solid var(--secondary-color-4);
+    background-color: transparent;
+    border-radius: 2rem;
     display: flex;
     justify-content: center;
 }
@@ -509,6 +519,9 @@ main {
 /* Media queries */
 
 @media screen and (min-width: 768px) {
+
+
+
     main {
         padding-top: 5rem;
     }

@@ -1,17 +1,15 @@
 import React from 'react';
 import classes from './CTAReminder.module.css';
+import Link from 'next/link';
 
-const CTAReminder = ({ padding }) => {
+const CTAReminder = () => {
     return (
-        <div className={`${classes.callToAction} ${padding}`}>
-            <div className={classes.wrapper}>
-                <h2>Ready to start?</h2>
-                <div className={classes.component}>
-                    <input placeholder='Enter email address'></input>
-                    <button className='primary-button'>Schedule a demo</button>
-                </div>
+        <section className={classes.reminderSection}>
+            <div className={`${classes.wrapper} max-width`}>
+                <h2>Ready to get started?</h2>
+                <Link href="" className='primary-button-dark'>contact us</Link>
             </div>
-        </div>
+        </section>
 
     );
 };

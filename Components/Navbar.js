@@ -9,11 +9,15 @@ import Link from 'next/link';
 const Navbar = () => {
     const burger = useRef();
     const { isMobileResolution } = useContext(GlobalContext);
+    const { isTabletResolution } = useContext(GlobalContext);
     const { isMenuOpen } = useContext(GlobalContext);
     const { toggleMenu } = useContext(GlobalContext);
+
+
+
     return (
         <header className={`${classes.header}`}>
-            <nav className={`${classes.navbar} max-width`}>
+            <nav className={`${classes.navbar} ${classes.maxWidth}`}>
                 <div className={classes.navWrapper}>
                     <div className='d-flex gap-3 align-items-center'>
                         <div className={classes.logo}>

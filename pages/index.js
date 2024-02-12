@@ -10,6 +10,7 @@ import Values from '@/Components/Values'
 import Client from '@/Components/Client'
 import Footer from '@/Components/Footer'
 import Feedback from '@/Components/Feedback'
+import CTAReminder from '@/Components/CTAReminder'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -77,6 +78,7 @@ export default function Home() {
       </div >
       <Values />
       <Feedback />
+      <CTAReminder />
       {/* <Client />
       <Values /> */}
       < Footer />

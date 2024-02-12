@@ -160,6 +160,11 @@ a.link:hover {
     transform: rotate(45deg) translate(-4px, -7px);
 }
 
+.max-width {
+    max-width: 69.375rem;
+    margin-inline: auto;
+}
+
 @media (min-width: 768px) {
     .navWrapper {
         justify-content: space-between;
