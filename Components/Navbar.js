@@ -17,7 +17,7 @@ const Navbar = () => {
 
     return (
         <header className={`${classes.header}`}>
-            <nav className={`${classes.navbar} ${classes.maxWidth}`}>
+            <nav className={`${classes.navbar} max-width`}>
                 <div className={classes.navWrapper}>
                     <div className='d-flex gap-3 align-items-center'>
                         <div className={classes.logo}>
