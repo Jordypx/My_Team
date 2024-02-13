@@ -28,8 +28,8 @@ a.link {
     color: var(--primary-color-3);
 }
 
-a.link:hover {
-    opacity: 1;
+.link:hover {
+    color: var(--primary-color-2);
 }
 
 .navLink {
