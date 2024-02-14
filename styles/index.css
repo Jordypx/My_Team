@@ -388,6 +388,22 @@ main {
     padding-bottom: 2rem;
 }
 
+
+.mainAboutSection {
+    position: relative;
+}
+
+.mainAboutSection::before {
+    content: '';
+    position: absolute;
+    bottom: -6.20rem;
+    right: -8rem;
+    width: 12.5rem;
+    height: 12.5rem;
+    background: url('../public/images/bg-pattern-about-1-mobile-nav-1.svg') no-repeat;
+    z-index: -1;
+}
+
 /* UTILS */
 
 .display-none {
@@ -484,6 +500,14 @@ main {
     overflow-y: hidden;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
 .h-100 {
     min-height: 100svh;
 }
@@ -519,7 +543,16 @@ main {
 /* Media queries */
 
 @media screen and (min-width: 768px) {
-
+    .mainAboutSection::before {
+        content: '';
+        position: absolute;
+        bottom: 0rem;
+        right: -11.5rem;
+        width: 12.5rem;
+        height: 12.5rem;
+        background: url('../public/images/bg-pattern-about-1-mobile-nav-1.svg') no-repeat;
+        z-index: -1;
+    }
 
 
     main {
@@ -563,6 +596,10 @@ main {
         background-image: url(/_next/static/media/bg-pattern-home-1.502807f1.svg);
         left: -7rem;
         top: 18rem;
+    }
+
+    .mainAboutSection::before {
+        right: -16.5rem;
     }
 
 }

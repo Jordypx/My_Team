@@ -1,5 +1,6 @@
 import About from '@/Components/About';
 import CTAReminder from '@/Components/CTAReminder';
+import Directors from '@/Components/Directors';
 import Footer from '@/Components/Footer';
 import Navbar from '@/Components/Navbar';
 import { getLogger } from '@/Logging/log-util';
@@ -58,18 +59,18 @@ export default function AboutPage() {
     return (
         <>
             <Head>
-                <title>PayAPI</title>
-                <meta name="description" content="Start building with our APIs for absolutely free" />
+                <title>MyTeam</title>
+                <meta name="description" content="We help companies build dyanmic teams" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className={`overlay-burger-menu ${isMenuOpen ? 'isActive' : ''}`} />
             <Navbar />
-            <main className='top-right-bg-circle'>
+            <main className='mainAboutSection'>
                 <About />
-                <CTAReminder />
-
+                {/* <CTAReminder /> */}
             </main>
+            <Directors />
             <Footer />
         </>
     );

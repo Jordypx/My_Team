@@ -28,7 +28,7 @@ const Navbar = () => {
                         {/* Classic links */}
                         <div className={`${isMobileResolution ? "display-none" : classes.navLink}`}>
 
-                            <Link href="/pricing" className={classes.link}>home</Link>
+                            <Link href="/" className={classes.link}>home</Link>
                             <Link href="/about" className={classes.link}>about</Link>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
                     <div className={`${classes.mobileNav} ${isMenuOpen ? classes.active : ""}`}>
                         <div className={classes.mobileNavWrapper}>
                             <div className={classes.mobileLinks}>
-                                <Link href="/pricing" className={classes.mobileLink} onClick={() => {
+                                <Link href="/" className={classes.mobileLink} onClick={() => {
                                     toggleMenu();
                                     burger.current.classList.toggle(classes.isActive);
                                 }}>home</Link>

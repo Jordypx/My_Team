@@ -19,7 +19,7 @@ const Footer = () => {
                             <Image src={logo} alt='logo payAPI' className={classes.logoImg} width={160} height={40} />
                         </Link>
                         <div className={`${classes.links}`}>
-                            <Link href="/pricing" className={classes.link}>home</Link>
+                            <Link href="/" className={classes.link}>home</Link>
                             <Link href="/about" className={classes.link}>about</Link>
                         </div>
                     </div>
