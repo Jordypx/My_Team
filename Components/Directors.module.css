@@ -4,6 +4,7 @@
     padding-top: 5.688rem;
 
     position: relative;
+    z-index: 2;
 }
 
 .directorSection::before {

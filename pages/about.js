@@ -1,5 +1,6 @@
 import About from '@/Components/About';
 import CTAReminder from '@/Components/CTAReminder';
+import Client from '@/Components/Client';
 import Directors from '@/Components/Directors';
 import Footer from '@/Components/Footer';
 import Navbar from '@/Components/Navbar';
@@ -71,6 +72,8 @@ export default function AboutPage() {
                 {/* <CTAReminder /> */}
             </main>
             <Directors />
+            <Client />
+            <CTAReminder />
             <Footer />
         </>
     );
