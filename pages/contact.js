@@ -57,14 +57,14 @@ export default function ContactPage() {
     return (
         <>
             <Head>
-                <title>PayAPI</title>
-                <meta name="description" content="Start building with our APIs for absolutely free" />
+                <title>MyTeam</title>
+                <meta name="description" content="We help companies build dyanmic teams" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className={`overlay-burger-menu ${isMenuOpen ? 'isActive' : ''}`} />
             <Navbar />
-            <main className='max-width top-right-bg-circle'>
+            <main className='max-width'>
                 <Contact />
                 <CTAReminder />
 

@@ -2,17 +2,33 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import classes from './Contact.module.css';
 
 import ClientsLogo from './ClientsLogo';
+import iconPerson from '@/public/images/icon-person.svg';
+import iconCog from '@/public/images/icon-cog.svg';
+import iconChart from '@/public/images/icon-chart.svg';
+import Image from 'next/image';
 
 const Contact = () => {
 
-    const form = useRef();
-    const [receiveCompanyAnnouncements, setReceiveCompanyAnnouncements] = useState(false);
-
     return (
         <div className={classes.container}>
-            <div className={classes.formWrapper}>
-                <h1>Submit a help request and we’ll get in touch shortly.</h1>
-                <form ref={form} className={classes.form}>
+            <div className={classes.wrapper}>
+                <h1>Contact</h1>
+                <h2>Ask about us</h2>
+                <div className={classes.qualities}>
+                    <div className={classes.quality}>
+                        <Image src={iconPerson} alt='icon person' />
+                        <p>The quality of our talent network</p>
+                    </div>
+                    <div className={classes.quality}>
+                        <Image src={iconCog} alt='icon cog' />
+                        <p>Usage & implementation of our software</p>
+                    </div>
+                    <div className={classes.quality}>
+                        <Image src={iconChart} alt='icon chart' />
+                        <p>How we help drive innovation</p>
+                    </div>
+                </div>
+                <form className={classes.form}>
                     <div className={classes.fieldsWrapper}>
                         <div className={classes.formGroup}>
                             <label htmlFor='name'>Name</label>
@@ -39,11 +55,7 @@ const Contact = () => {
                             <textarea type='textarea' id='message' name='message' placeholder='Message' rows={8} required />
                             <div className={classes.errorMessage}></div>
                         </div>
-                        <label className={classes.checkBoxContainer}>
-                            Stay up-to-date with company announcements and updates to our API
-                            <input type="checkbox" checked={receiveCompanyAnnouncements} onChange={() => setReceiveCompanyAnnouncements(!receiveCompanyAnnouncements)} />
-                            <span className={classes.checkMark}></span>
-                        </label>
+
                     </div>
                     <div className={classes.buttonWrapper}>
                         <button className='secondary-button-dark' type='submit'>Submit</button>
