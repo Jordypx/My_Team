@@ -121,11 +121,10 @@ html {
     /* Bug : rentre en conflit avec le form validation (le message d'erreur ne s'affiche pas)  */
     /* scroll-behavior: smooth; */
     font-size: 100%;
-    overflow-x: hidden;
 }
 
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
     font-size: var(--body-500);
     line-height: var(--line-height-500);

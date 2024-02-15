@@ -3,15 +3,15 @@
     position: relative;
 }
 
+
 .valueSection::before {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
-    width: 12.5rem;
+    width: 6.25rem;
     height: 15.813rem;
     background: url('/images/bg-pattern-home-3.svg') no-repeat;
-    transform: translate(50%);
 }
 
 .wrapper {

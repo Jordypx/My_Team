@@ -86,8 +86,9 @@ a.link {
     content: '';
     position: absolute;
     bottom: 7rem;
-    right: -9rem;
-    width: 12.5rem;
+    right: -2rem;
+    right: 0;
+    width: 6.25rem;
     height: 12.5rem;
     background: url('../public/images/bg-pattern-about-1-mobile-nav-1.svg') no-repeat;
 }
