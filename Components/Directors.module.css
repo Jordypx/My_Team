@@ -52,6 +52,7 @@
     }
 
     .directorSection::before {
+        top: 0rem;
         left: -7.5rem;
     }
 }
@@ -66,8 +67,4 @@
         padding-top: 4.375rem;
     }
 
-    .directorSection::before {
-        top: 0rem;
-        left: -7rem;
-    }
 }

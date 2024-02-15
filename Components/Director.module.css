@@ -63,7 +63,14 @@
     min-height: 3.5rem;
     padding: 0;
     z-index: 2;
+    transition: background-color 0.25s ease;
 
+}
+
+.buttonPlus.active {
+
+    background-color: var(--secondary-color-1);
+    transition: background-color 0.25s ease;
 }
 
 .buttonPlus:hover {

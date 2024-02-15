@@ -11,7 +11,7 @@ import avatarAden from '@/public/images/avatar-aden.jpg';
 const Directors = () => {
     return (
         <section className={classes.directorSection}>
-            <div className={classes.wrapper}>
+            <div className={`${classes.wrapper} max-width`}>
                 <h2>Meet the directors</h2>
                 <div className={classes.directorContainer}>
                     <Director name="Nikita Marks" title="Found & CEO" image={avatarNikita} alt="avatar Nikita" quote="“It always amazes me how much talent there is in every corner of the globe.”" />

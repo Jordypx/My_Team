@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Director.module.css';
 import Image from 'next/image';
 import iconCross from '@/public/images/icon-cross.svg';
+import iconClose from '@/public/images/icon-close.svg';
 import twitterIcon from '@/public/images/icon-twitter.svg';
 import linkedinIcon from '@/public/images/icon-linkedin.svg';
 
@@ -19,8 +20,9 @@ const Director = ({ name, title, image, alt, quote }) => {
                     <p>{title}</p>
                 </div>
             </div>
-            <button className={classes.buttonPlus} onClick={() => setActive(!active)}>
-                <Image src={iconCross} alt="icon cross" className={classes.crossIcon} />
+            <button className={`${classes.buttonPlus} ${active ? classes.active : ''}`} onClick={() => setActive(!active)}>
+                {!active && <Image src={iconCross} alt="icon cross" className={classes.crossIcon} />}
+                {active && <Image src={iconClose} alt="icon close" className={classes.crossIcon} />}
             </button>
             <div className={`${classes.overlay} ${active ? classes.visibleOverlay : classes.hiddenOverlay}`}>
                 <div className={classes.overlayContent}>
@@ -32,7 +34,6 @@ const Director = ({ name, title, image, alt, quote }) => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
