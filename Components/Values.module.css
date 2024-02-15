@@ -4,7 +4,7 @@
 }
 
 
-.valueSection::before {
+/* .valueSection::before {
     content: '';
     position: absolute;
     top: 0;
@@ -12,7 +12,7 @@
     width: 6.25rem;
     height: 15.813rem;
     background: url('/images/bg-pattern-home-3.svg') no-repeat;
-}
+} */
 
 .wrapper {
     display: flex;

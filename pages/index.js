@@ -79,8 +79,6 @@ export default function Home() {
       <Values />
       <Feedback />
       <CTAReminder />
-      {/* <Client />
-      <Values /> */}
       < Footer />
 
     </>
