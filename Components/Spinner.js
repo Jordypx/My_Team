@@ -6,7 +6,7 @@ const Spinner = () => {
         <div className={classes.overlayLoader}><TailSpin
             height="200"
             width="200"
-            color="#BA4270"
+            color="#F67E7E"
             ariaLabel="tail-spin-loading"
             radius="1"
             wrapperStyle={{}}

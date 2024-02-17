@@ -400,16 +400,20 @@ main {
 .mainAboutSection::before {
     content: '';
     position: absolute;
-    bottom: -6.20rem;
+    bottom: 0;
     right: -1.5rem;
+    height: 6.25rem;
     width: 6.25rem;
-    height: 12.5rem;
     background: url('../public/images/bg-pattern-about-1-mobile-nav-1.svg') no-repeat;
     z-index: -1;
+
+
 }
 
 .contact {
     position: relative;
+    padding-top: 1rem;
+    margin: 0;
 }
 
 .contact::before {
@@ -566,6 +570,7 @@ main {
 @media screen and (min-width: 768px) {
     .mainAboutSection::before {
         right: -5rem;
+        height: 12.5rem;
     }
 
 
@@ -575,6 +580,10 @@ main {
 
     .home {
         padding-bottom: 14rem;
+    }
+
+    .contact {
+        margin: 0 var(--sidePadding);
     }
 
     .contact::before {
@@ -628,8 +637,9 @@ main {
     .containerNavAndHero::before {
         content: '';
         position: absolute;
-
-        background-image: url(/_next/static/media/bg-pattern-home-1.502807f1.svg);
+        width: 12.5rem;
+        height: 12.5rem;
+        background-image: url('../public/images/bg-pattern-home-1.svg');
         left: -7rem;
         top: 18rem;
     }
