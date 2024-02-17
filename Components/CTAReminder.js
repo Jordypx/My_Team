@@ -7,7 +7,7 @@ const CTAReminder = () => {
         <section className={classes.reminderSection}>
             <div className={`${classes.wrapper} max-width`}>
                 <h2>Ready to get started?</h2>
-                <Link href="" className='primary-button-dark'>contact us</Link>
+                <Link href="/contact" className='primary-button-dark'>contact us</Link>
             </div>
         </section>
 

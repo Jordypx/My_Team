@@ -599,6 +599,10 @@ main {
         padding-top: 4rem;
     }
 
+    .max-width {
+        max-width: 38rem;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -652,6 +656,10 @@ main {
         flex-direction: column;
     }
 
+    .max-width {
+        max-width: 69.375rem;
+        margin-inline: auto;
+    }
 
 
 }

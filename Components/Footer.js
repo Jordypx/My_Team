@@ -9,10 +9,10 @@ import iconTwitter from '@/public/images/icon-twitter.svg';
 import iconPinterest from '@/public/images/icon-pinterest.svg';
 
 const Footer = () => {
-
+    const { isDesktopResolution } = useContext(GlobalContext);
     return (
         <footer className={`${classes.footer}`}>
-            <div className={`${classes.wrapper} max-width`}>
+            <div className={`${classes.wrapper} ${isDesktopResolution ? 'max-width' : ''}`}>
                 <div className={classes.contactInfoAndLinksContainer}>
                     <div className={classes.logoAndLinksContainer}>
                         <Link href="/">

@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import classes from './Values.module.css';
 import Image from 'next/image';
 
-
 const Values = () => {
 
     return (

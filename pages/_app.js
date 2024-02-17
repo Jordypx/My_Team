@@ -1,6 +1,4 @@
-import Footer from '@/Components/Footer';
 import '@/styles/index.css';
-import Navbar from '@/Components/Navbar';
 import { GlobalContextProvider } from '@/Store/GlobalContext';
 
 import Overlay from '@/Components/Overlay';

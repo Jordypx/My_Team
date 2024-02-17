@@ -9,7 +9,8 @@ import Link from 'next/link';
 const Navbar = () => {
     const burger = useRef();
     const { isMobileResolution } = useContext(GlobalContext);
-    const { isTabletResolution } = useContext(GlobalContext);
+    const { isDesktopResolution } = useContext(GlobalContext);
+
     const { isMenuOpen } = useContext(GlobalContext);
     const { toggleMenu } = useContext(GlobalContext);
 
@@ -17,7 +18,7 @@ const Navbar = () => {
 
     return (
         <header className={`${classes.header}`}>
-            <nav className={`${classes.navbar} max-width`}>
+            <nav className={`${classes.navbar} ${isDesktopResolution ? 'max-width' : ''}`}>
                 <div className={classes.navWrapper}>
                     <div className='d-flex gap-3 align-items-center'>
                         <div className={classes.logo}>
@@ -34,7 +35,6 @@ const Navbar = () => {
                     </div>
                     <div className={`${isMobileResolution ? "display-none" : ""}`}>
                         <Link href="/contact" className='primary-button-light'>contact us</Link>
-
                     </div>
 
 

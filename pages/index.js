@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import { useContext, useEffect, useState } from 'react'
 import GlobalContext from '@/Store/GlobalContext'
 import { getLogger } from '@/Logging/log-util'
@@ -12,7 +11,6 @@ import Footer from '@/Components/Footer'
 import Feedback from '@/Components/Feedback'
 import CTAReminder from '@/Components/CTAReminder'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   /* Logger */
