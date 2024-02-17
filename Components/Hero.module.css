@@ -57,6 +57,10 @@
     }
 
     .heroContainer p {
+        font-size: 1.125rem;
+    }
+
+    .heroContainer p {
         position: relative;
         max-width: 88%;
     }

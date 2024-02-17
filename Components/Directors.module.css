@@ -2,7 +2,7 @@
     padding: var(--topAndBotPadding) var(--sidePadding) 7.188rem var(--sidePadding);
     background-color: var(--secondary-color-3);
     padding-top: 5.688rem;
-
+    overflow: hidden;
     position: relative;
     z-index: 2;
 }
@@ -10,8 +10,8 @@
 .directorSection::before {
     content: '';
     position: absolute;
-    top: -6rem;
-    left: -8rem;
+    top: -6.75rem;
+    left: -6.5rem;
     width: 12.5rem;
     height: 12.5rem;
     background: url('../public/images/bg-pattern-about-2-contact-1.svg') no-repeat;
