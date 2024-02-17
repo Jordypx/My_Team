@@ -4,7 +4,7 @@ export default function Document() {
 
 
   return (
-    <Html lang="fr">
+    <Html lang="eng">
       <Head />
       <body>
         <Main />

@@ -181,7 +181,7 @@ a.link {
 
 
     .navLink {
-        gap: 3rem;
+        gap: 2.5rem;
     }
 
     .navWrapper {
@@ -196,5 +196,13 @@ a.link {
     .navWrapper {
         padding-top: 0;
         padding-bottom: 3rem;
+    }
+
+    .logoImg {
+        width: 10rem;
+    }
+
+    .header {
+        padding-top: 4.813rem;
     }
 }

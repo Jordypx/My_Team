@@ -20,7 +20,7 @@ const Navbar = () => {
         <header className={`${classes.header}`}>
             <nav className={`${classes.navbar} ${isDesktopResolution ? 'max-width' : ''}`}>
                 <div className={classes.navWrapper}>
-                    <div className='d-flex gap-3 align-items-center'>
+                    <div className='d-flex gap-5 align-items-center'>
                         <div className={classes.logo}>
                             <Link href="/">
                                 <Image src={logo} alt='logo myTeam' className={classes.logoImg} />

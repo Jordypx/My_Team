@@ -1,5 +1,6 @@
 .feedbackSection {
     position: relative;
+    background-color: var(--secondary-color-3);
 }
 
 .feedbackSection::before {
@@ -78,13 +79,14 @@
     top: -2.25rem;
     width: 4.188rem;
     height: 3.5rem;
-    background: url('/images/icon-quotes.svg') no-repeat;
-    z-index: -1;
+    background: url('../public/images/icon-quotes.svg') no-repeat;
+    z-index: 0;
 }
 
 .feedbackMessage p {
     font-size: 0.938rem;
     line-height: 1.563rem;
+    position: relative;
 
 }
 
@@ -110,7 +112,7 @@
 @media screen and (min-width: 1440px) {
 
     .wrapper {
-        padding-top: 9.125rem;
+        padding-top: 8.75rem;
     }
 
     .feedbacks {

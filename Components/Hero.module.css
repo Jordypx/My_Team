@@ -48,7 +48,7 @@
         grid-template-columns: 55% 45%;
         align-items: end;
         gap: 2rem;
-        padding-top: 4rem;
+        padding-top: 0;
     }
 
     .heroContainer h1,
@@ -60,8 +60,6 @@
         position: relative;
         max-width: 88%;
     }
-
-
 
 
     .heroContainer p::after {
@@ -78,7 +76,7 @@
     .heroContainer::after {
         content: '';
         position: absolute;
-        bottom: -14rem;
+        bottom: -15rem;
         width: 358px;
         height: 6rem;
         right: 0;

@@ -35,7 +35,7 @@
 .valueSection h2::before {
     content: '';
     position: absolute;
-    top: -2.313rem;
+    top: -2rem;
     left: 0;
     width: 3.125rem;
     height: 4px;
@@ -45,6 +45,7 @@
 
 .valueSection h3 {
     color: var(--primary-color-2);
+    line-height: 1.75rem;
 }
 
 .valueSection p {
@@ -83,7 +84,7 @@
     }
 
     .values {
-        margin-inline: auto;
+        margin-inline: H2auto;
     }
 
     .valueSection h2 {
@@ -119,6 +120,12 @@
     .values {
         padding-top: unset;
         margin-top: 2rem;
+        gap: 2rem;
     }
+
+    .valueSection h2::before {
+        top: -3.375rem;
+    }
+
 
 }
