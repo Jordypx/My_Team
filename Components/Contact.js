@@ -10,22 +10,24 @@ import Image from 'next/image';
 const Contact = () => {
 
     return (
-        <div className={classes.container}>
-            <div className={classes.wrapper}>
-                <h1>Contact</h1>
-                <h2>Ask about us</h2>
-                <div className={classes.qualities}>
-                    <div className={classes.quality}>
-                        <Image src={iconPerson} alt='icon person' />
-                        <p>The quality of our talent network</p>
-                    </div>
-                    <div className={classes.quality}>
-                        <Image src={iconCog} alt='icon cog' />
-                        <p>Usage & implementation of our software</p>
-                    </div>
-                    <div className={classes.quality}>
-                        <Image src={iconChart} alt='icon chart' />
-                        <p>How we help drive innovation</p>
+        <div className={`${classes.container} max-width`}>
+            <div className={`${classes.wrapper} ${classes.maxWidth}`}>
+                <div className={classes.qualitiesAndFormContainer}>
+                    <h1>Contact</h1>
+                    <h2>Ask about us</h2>
+                    <div className={classes.qualities}>
+                        <div className={classes.quality}>
+                            <Image src={iconPerson} alt='icon person' />
+                            <p>The quality of our talent network</p>
+                        </div>
+                        <div className={classes.quality}>
+                            <Image src={iconCog} alt='icon cog' />
+                            <p>Usage & implementation of our software</p>
+                        </div>
+                        <div className={classes.quality}>
+                            <Image src={iconChart} alt='icon chart' />
+                            <p>How we help drive innovation</p>
+                        </div>
                     </div>
                 </div>
                 <form className={classes.form}>
@@ -52,19 +54,15 @@ const Contact = () => {
                         </div>
                         <div className={classes.formGroup}>
                             <label htmlFor='message'>Message</label>
-                            <textarea type='textarea' id='message' name='message' placeholder='Message' rows={8} required />
+                            <textarea type='textarea' id='message' name='message' placeholder='Message' rows={4} required />
                             <div className={classes.errorMessage}></div>
                         </div>
 
                     </div>
                     <div className={classes.buttonWrapper}>
-                        <button className='secondary-button-dark' type='submit'>Submit</button>
+                        <button className='secondary-button' type='submit'>Submit</button>
                     </div>
                 </form>
-            </div>
-            <div className={classes.clients}>
-                <h2>Join the thousands of innovators already building with us</h2>
-                <ClientsLogo color='blue' />
             </div>
         </div>
     );

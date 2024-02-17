@@ -56,7 +56,7 @@ a.link {
 
 .mobileNav {
     height: 100vh;
-    width: 65%;
+    width: 52%;
     position: fixed;
     z-index: 98;
     top: 0;
@@ -65,7 +65,6 @@ a.link {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transition: .5s ease-in-out;
     background-color: var(--secondary-color-2);
-
 }
 
 

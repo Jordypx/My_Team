@@ -408,6 +408,23 @@ main {
     z-index: -1;
 }
 
+.contact {
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -1.5rem;
+    width: 6.25rem;
+    height: 7.031rem;
+    background: url("../public/images/bg-pattern-contact-2.svg") no-repeat;
+    z-index: -1;
+}
+
+
+
 /* UTILS */
 
 .display-none {
@@ -560,6 +577,27 @@ main {
         padding-bottom: 14rem;
     }
 
+    .contact::before {
+        height: 14.063rem;
+        right: -5rem;
+    }
+
+
+    .contact::after {
+        content: '';
+        position: absolute;
+        top: 4rem;
+        left: -11.25rem;
+        width: 12.5rem;
+        height: 12.5rem;
+        background: url("../public/images/bg-pattern-about-2-contact-1.svg") no-repeat;
+        z-index: -1;
+
+    }
+
+    .contact {
+        padding-top: 4rem;
+    }
 
 }
 
@@ -595,6 +633,25 @@ main {
     .mainAboutSection::before {
         right: -10rem;
     }
+
+    .contact {
+        flex: 1;
+    }
+
+    .contact::before {
+        right: -10rem;
+    }
+
+    .contact::after {
+        left: -16.25rem;
+    }
+
+    .contact-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
 
 
 }

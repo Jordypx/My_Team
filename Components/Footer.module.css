@@ -127,6 +127,7 @@
 
 @media screen and (min-width: 1440px) {
 
+
     .wrapper {
         flex-direction: row;
         justify-content: space-between;
@@ -162,4 +163,6 @@
     .socialLinks {
         justify-content: end;
     }
+
+
 }
